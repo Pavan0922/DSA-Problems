@@ -19,3 +19,19 @@
 
 🧠 Write your implementation below this comment:
 */
+
+const array = [1, 2, 3, 4, 5, 6];
+let D = 3;
+let temp = [];
+
+function rotate(D, array) {
+  for (let i = D; i < array.length; i++) {
+    temp.push(array[i]);
+  }
+  for (let i = 0; i < D; i++) {
+    temp.push(array[i]);
+  }
+  return temp
+}
+console.log(rotate(D,array));
+
